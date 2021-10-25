@@ -1,0 +1,164 @@
+.product-img {
+    display: flex;
+}
+
+.thumbnails {
+    display: block;
+    padding-right: 0;
+    text-align: center;
+}
+
+.thumbnails > div img {
+    width: 80%;
+}
+
+.thumbnails > div img:hover {
+    border: 2px solid black;
+}
+
+.product-img-detail > img {
+    width: 100%;
+}
+
+.product-detail {
+    margin-left: 20px;
+}
+
+.product-title > h2 {
+    margin-top: 0;
+}
+
+.product-price {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(216, 214, 214);
+}
+
+.product-price-old {
+    padding-right: 8px;
+}
+
+.product-price-current {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.select-swap-color {
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(216, 214, 214);
+    padding-bottom: 20px;
+}
+.select-swap-color > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.product-size {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(216, 214, 214);
+} 
+.size-guide > img {
+    width: 100%;
+}
+
+.number-product {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.number-product > h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.number-product-btn {
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+}
+.number-product-btn, .number-product > h4 {
+    padding: 10px 15px;
+    border: 1px solid rgb(207, 204, 204);
+}
+
+
+.choose {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(77, 75, 75);
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.try {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    color: rgb(77, 75, 75);;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+.product-content {
+    display: flex;
+}
+.product-description {
+    margin-top: 40px;
+}
+
+.tutorial-size-img {
+    width: 50%
+}
+
+input#number {
+    width: 40px;
+    border: none;
+    text-align: center;
+}
+
+input#number::placeholder {
+    color: black;
+    text-align: center;
+}
+
+.select-swap-size span {
+    display: flex;
+}
+
+.select-swap-size span div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.size {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    line-height: 40px;
+    display: block;
+}
+
+.related-products {
+    text-align: center;
+}
+
+.related-products-item {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+

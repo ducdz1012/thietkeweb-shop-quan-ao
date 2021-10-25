@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DucDZ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="app">
+        <!--Start Header-->
+        <header class="header">
+            <div class="grid">
+                <nav class="nav hide-on-mobile-tablet">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item" id="has-qr">
+                            Vào cửa hàng trên ứng dụng Duke
+                            <div class="header__qr">
+                                <img src="./images/qr-code.jpg" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="#" class="header__qr-link">
+                                        <img src="./images/app-store.png" alt="App Store" class="header__qr-download">
+                                    </a>
+                                    <a href="#" class="header__qr-link">
+                                        <img src="./images/ch-play.png" alt="Shopee" class="header__qr-download">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav-item">
+                            <span class="no-pointer">Kết nối</span>
+                            <a href="https://www.facebook.com/profile.php?id=100011212983260" class="header__nav-icon-link">
+                                <i class="ti-facebook" style="padding: 5px;"></i>
+                            </a>
+                            <a href="https://www.instagram.com/_haveduc/" class="header__nav-icon-link">
+                                <i class="ti-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-item-link">
+                                <i class="ti-home"></i> 
+                                Trang chủ</a>
+                        </li>
+                        <li class="header__nav-item" id="has-notify">
+                            <a href="#" class="header__nav-item-link" >
+                                <i class="ti-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item">
+                                        <a href="#" class="header__notify-link">
+                                            <img src="./images/ao2.jpg" alt="Ao bui" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name"><b>Áo bụi ngắn tay</b></span>
+                                                <span class="header__notify-description">Sản phẩm đang được mở bán với mức giá siêu tốt khi mua online, giao hàng online trên toàn quốc với chi phí tiết kiệm nhất</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="#" class="header__notify-link">
+                                            <img src="./images/ao6.jpg" alt="Ao bui" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name"><b>Áo đại bàng</b></span>
+                                                <span class="header__notify-description">Duck' store cho ra mắt mẫu áo mới, nhanh tay với ưu đãi 100 chiếc ao đầu tiên giá chỉ 100.000đ</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="#" class="header__notify-link">
+                                            <img src="./images/quan1.jpg" alt="Ao bui" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name"><b>Quần Kaki nam cao cấp theo hình logo độc lạ</b></span>
+                                                <span class="header__notify-description">Sản phẩm đang được bán tại Hải Dương, nên thời gian nhận hàng phụ thuộc vào địa chỉ nhận hàng của bạn.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <footer class="header__notify-footer">
+                                        <a href="#" class="header__notify-footer-btn">
+                                            Xem tất cả 
+                                        </a>
+                                    </footer>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-item-link">
+                                <i class="ti-help-alt"></i> 
+                                Trợ giúp</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="contact.html" class="header__nav-item-link">
+                                <i class="ti-headphone"></i> 
+                                Liên hệ</a>
+                        </li>
+                        <li class="header__nav-login"><a href="join.html" class="j">Đăng kí</a></li>
+                        <li class="header__nav-login"><a href="login.html" class="lg">Đăng nhập</a></li>
+                    </ul>
+                </nav>
+                <!--Start Header Search-->
+                <div class="header-with-search">
+                    <!-- ==== MENU MOBILE TABLET ==== -->
+                    <label for="mobile-tablet-menu-checkbox" class="mobile-tablet-menu">
+                        <i class="header-with-searc-icon ti-menu"></i>
+                    </label>
+                    <input type="checkbox" hidden id="mobile-tablet-menu-checkbox" class="header__menu-checkbox">
+                    <ul class="category-list-res">
+                        
+                        <li class="category-item ">
+                            <a href="#" class="category-item__link">Set</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">Quần jean</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">Quần kaki</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">Áo phông</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">Áo khoác jean</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">Áo khoác da</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">Áo khoác kaki</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">Phụ kiện</a>
+                        </li>
+                        <li class="category-item category-item-login">
+                            <a href="#" class="category-item__link category-item__link-login">
+                                <h5>Đăng nhập</h5>
+                            </a>
+                            <a href="#" class="category-item__link category-item__link-login">
+                                <h5>Đăng kí</h5>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- ==== END ~~~ MENU MOBILE TABLET ==== -->
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header-with-searc-icon ti-search"></i>
+                    </label>
+                    <div class="header__logo hide-on-tablet animate__animated animate__slideInLeft animate__delay-1s">
+                        <a href="index.html"><img src="./images/duck-svgrepo-com.svg" class="header__logo-img" style="fill: white;" alt="DUCK" title="Duck's Store"></a>
+                    </div>
+
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+                    <div class="header__search hide-on-mobile">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm">
+                            <!-- Search History -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Áo thun đẹp</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Áo khoác nam đẹp</a>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon ti-search"></i>
+                        </button>
+                    </div>
+                    <!-- Cart-->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon ti-shopping-cart"></i>
+                            <span class="header__cart-notice">0</span>
+                            <div class="header__card-list header__card-list--no-cart">
+                                <img src="./images/no-card.png" alt="" class="header__cart-nocard-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Header Search-->
+                
+            </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
+        </header>
+        <!--End Header-->
+        <div class="app__container">
+            <div class="grid app__content">
+                <div class="grid__row">
+                    <div class="grid__column-2 hide-on-mobile-tablet">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <a href="#">
+                                <i class="category__heading-icon ti-menu-alt"></i>
+                                Danh Mục
+                                </a>
+                            </h3>
+            
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Set</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Quần jean</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Quần kaki</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Áo phông</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Áo khoác jean</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Áo khoác da</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Áo khoác kaki</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Phụ kiện</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="grid__column-10">
+                        <div class="home-filter hide-on-mobile-tablet">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn">Phổ biến</button>
+                            <button class="home-filter__btn btn--primary">Mới nhất</button>
+                            <button class="home-filter__btn btn">Bán chạy</button>
+
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="select-input__icon ti-angle-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: cao đến thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                        <i class="home-filter__page-icon ti-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon ti-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-3333">
+                                    <!-- Product Item-->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item-watch">
+                                            <h5>Xem sản phẩm</h5>
+                                        </div>
+                                        <div>
+                                            <a href="product-details.html">
+                                                <img src="./images/ao1.jpg" alt="" class="home-product-tem__img">
+                                            </a>
+                                        </div>
+                                        <a href="product-details.html" class="home-product-tem__name">ÁO KHOÁC KAKI JACKLANE</a>
+                                        <div class="home-product-tem__price">
+                                            <span class="home-product-tem__price-old">400.000đ</span>
+                                            <span class="home-product-tem__price-current">320.000đ</span>
+                                        </div>
+                                        <div class="home-product-tem__sale-off">
+                                            <span class="home-product-tem__sale-ofd-percent">20%</span>
+                                            <span class="home-product-tem__sale-ofd-lable">off</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-3333">
+                                    <!-- Product Item-->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item-watch">
+                                            <h5>Xem sản phẩm</h5>
+                                        </div>
+                                        <div>
+                                            <a href="product-details.html">
+
+                                                <img src="./images/ao2.jpg" alt="" class="home-product-tem__img">
+                                            </a>
+                                        </div>
+                                        <a href="product-details.html" class="home-product-tem__name">ÁO HOODIE JACKET OVERSIZE</a> 
+                                        <div class="home-product-tem__price">
+                                            <span class="home-product-tem__price-old">400.000đ</span>
+                                            <span class="home-product-tem__price-current">280.000đ</span>
+                                        </div>
+                                        <div class="home-product-tem__sale-off">
+                                            <span class="home-product-tem__sale-ofd-percent">30%</span>
+                                            <span class="home-product-tem__sale-ofd-lable">off</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-3333">
+                                    <!-- Product Item-->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item-watch">
+                                            <h5>Xem sản phẩm</h5>
+                                        </div>
+                                        <div>
+                                            <a href="product-details.html">
+
+                                                <img src="./images/ao3.jpg" alt="" class="home-product-tem__img">
+                                            </a>
+                                        </div>
+                                        <a href="product-details.html" class="home-product-tem__name">ÁO KHOÁC MOUNTAIN PARKA</a> 
+                                        <div class="home-product-tem__price">
+                                            <span class="home-product-tem__price-current">280.000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-3333">
+                                    <!-- Product Item-->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item-watch">
+                                            <h5>Xem sản phẩm</h5>
+                                        </div>
+                                        <div>
+                                            <a href="product-details.html">
+
+                                                <img src="./images/ao4.jpg" alt="" class="home-product-tem__img">
+                                            </a>
+                                        </div>
+                                        <a href="product-details.html" class="home-product-tem__name">>ÁO THUN OVERSIZE HATARAKU</a> 
+                                        <div class="home-product-tem__price">
+                                            <span class="home-product-tem__price-old">200.000đ</span>
+                                            <span class="home-product-tem__price-current">180.000đ</span>
+                                        </div>
+                                        <div class="home-product-tem__sale-off">
+                                            <span class="home-product-tem__sale-ofd-percent">20%</span>
+                                            <span class="home-product-tem__sale-ofd-lable">off</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-3333">
+                                    <!-- Product Item-->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item-watch">
+                                            <h5>Xem sản phẩm</h5>
+                                        </div>
+                                        <div>
+                                            <a href="product-details.html">
+
+                                                <img src="./images/ao5.jpg" alt="" class="home-product-tem__img">
+                                            </a>
+                                        </div>
+                                        <a href="product-details.html" class="home-product-tem__name">ÁO THUN OVERSIZE SHIKI</a> 
+                                        <div class="home-product-tem__price">
+                                            <span class="home-product-tem__price-old">300.000đ</span>
+                                            <span class="home-product-tem__price-current">270.000đ</span>
+                                        </div>
+                                        <div class="home-product-tem__sale-off">
+                                            <span class="home-product-tem__sale-ofd-percent">10%</span>
+                                            <span class="home-product-tem__sale-ofd-lable">off</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-3333">
+                                    <!-- Product Item-->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item-watch">
+                                            <h5>Xem sản phẩm</h5>
+                                        </div>
+                                        <div>
+                                            <a href="product-details.html">
+
+                                                <img src="./images/quan1.jpg" alt="" class="home-product-tem__img">
+                                            </a>
+                                        </div>
+                                        <a href="product-details.html" class="home-product-tem__name">QUẦN DÀI KAKI BASIC</a> 
+                                        <div class="home-product-tem__price">
+                                            <span class="home-product-tem__price-old">200.000đ</span>
+                                            <span class="home-product-tem__price-current">160.000đ</span>
+                                        </div>
+                                        <div class="home-product-tem__sale-off">
+                                            <span class="home-product-tem__sale-ofd-percent">20%</span>
+                                            <span class="home-product-tem__sale-ofd-lable">off</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-3333">
+                                    <!-- Product Item-->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item-watch">
+                                            <h5>Xem sản phẩm</h5>
+                                        </div>
+                                        <div>
+                                            <a href="product-details.html">
+
+                                                <img src="./images/set.jpg" alt="" class="home-product-tem__img">
+                                            </a>
+                                        </div>
+                                        <a href="product-details.html" class="home-product-tem__name">SET BỘ NỈ ZIPPER COLLAR</a> 
+                                        <div class="home-product-tem__price">
+                                            <span class="home-product-tem__price-current">330.000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-3333">
+                                    <!-- Product Item-->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item-watch">
+                                            <h5>Xem sản phẩm</h5>
+                                        </div>
+                                        <div>
+                                            <a href="product-details.html">
+
+                                                <img src="./images/mu1.jpg" alt="" class="home-product-tem__img">
+                                            </a>
+                                        </div>
+                                        <a href="product-details.html" class="home-product-tem__name">MŨ LEN ADVENTURETIME</a> 
+                                        <div class="home-product-tem__price">
+                                            <span class="home-product-tem__price-old">180.000đ</span>
+                                            <span class="home-product-tem__price-current">90.000đ</span>
+                                        </div>
+                                        <div class="home-product-tem__sale-off">
+                                            <span class="home-product-tem__sale-ofd-percent">50%</span>
+                                            <span class="home-product-tem__sale-ofd-lable">off</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-3333">
+                                    <!-- Product Item-->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item-watch">
+                                            <h5>Xem sản phẩm</h5>
+                                        </div>
+                                        <div>
+                                            <a href="product-details.html">
+
+                                                <img src="./images/ao6.jpg" alt="" class="home-product-tem__img">
+                                            </a>
+                                        </div>
+                                        <a href="product-details.html" class="home-product-tem__name">Áo Sweater Cao cổ Oversize </a> 
+                                        <div class="home-product-tem__price">
+                                            <span class="home-product-tem__price-old">200.000đ</span>
+                                            <span class="home-product-tem__price-current">160.000đ</span>
+                                        </div>
+                                        <div class="home-product-tem__sale-off">
+                                            <span class="home-product-tem__sale-ofd-percent">40%</span>
+                                            <span class="home-product-tem__sale-ofd-lable">off</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-3333">
+                                    <!-- Product Item-->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item-watch">
+                                            <h5>Xem sản phẩm</h5>
+                                        </div>
+                                        <div>
+                                            <a href="product-details.html">
+
+                                                <img src="./images/ao7.jpg" alt="" class="home-product-tem__img">
+                                            </a>
+                                        </div>
+                                        <a href="product-details.html" class="home-product-tem__name">ÁO SƠMI CỘC TAY CSSY</a>
+                                        <div class="home-product-tem__price">
+                                            <span class="home-product-tem__price-old">400.000đ</span>
+                                            <span class="home-product-tem__price-current">320.000đ</span>
+                                        </div>
+                                        <div class="home-product-tem__sale-off">
+                                            <span class="home-product-tem__sale-ofd-percent">20%</span>
+                                            <span class="home-product-tem__sale-ofd-lable">off</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-3333">
+                                    <!-- Product Item-->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item-watch">
+                                            <h5>Xem sản phẩm</h5>
+                                        </div>
+                                        <div>
+                                            <a href="product-details.html">
+
+                                                <img src="./images/ao8.jpg" alt="" class="home-product-tem__img">
+                                            </a>
+                                        </div>
+                                        <a href="product-details.html" class="home-product-tem__name">ÁO SƠ MI CỘC TAY POCKET</a>
+                                        <div class="home-product-tem__price">
+                                            <span class="home-product-tem__price-current">220.000đ</span>
+                                        </div>
+                                    </div>
+                                </div><div class="grid__column-3333">
+                                    <!-- Product Item-->
+                                    <div class="home-product-item">
+                                        <div class="home-product-item-watch">
+                                            <h5>Xem sản phẩm</h5>
+                                        </div>
+                                        <div>
+                                            <a href="product-details.html">
+
+                                                <img src="./images/ao9.jpg" alt="" class="home-product-tem__img">
+                                            </a>
+                                        </div>
+                                        <a href="product-details.html" class="home-product-tem__name">ÁO KHOÁC PARKA WINDY</a>
+                                        <div class="home-product-tem__price">
+                                            <span class="home-product-tem__price-old">500.000đ</span>
+                                            <span class="home-product-tem__price-current">450.000đ</span>
+                                        </div>
+                                        <div class="home-product-tem__sale-off">
+                                            <span class="home-product-tem__sale-ofd-percent">10%</span>
+                                            <span class="home-product-tem__sale-ofd-lable">off</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="pagination">
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">
+                                    <i class="pagination-item__icon ti-angle-left"></i>
+                                </a>
+                            </li>
+
+                            <li class="pagination-item pagination-item--active">
+                                <a href="#" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">2</a>
+                            </li><li class="pagination-item">
+                                <a href="#" class="pagination-item__link">3</a>
+                            </li><li class="pagination-item pagination-item-none">
+                                <a href="#" class="pagination-item__link">4</a>
+                            </li><li class="pagination-item pagination-item-none">
+                                <a href="#" class="pagination-item__link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">12</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">
+                                    <i class="pagination-item__icon ti-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Start Footer-->
+        <div class="call animate__animated animate__tada animate__infinite">
+            <img src="./images/call.svg" alt="" class="cal-animate">
+        </div>
+        <div class="services grid__row">
+            <div class="grid__column-3">
+                <div class="service">
+                    <div>
+                        <img class ="service-img" src="./images/truck-moving-solid.svg" alt="">
+                    </div>
+                    <h3>Miễn phí giao hàng</h3>
+                    <p>Với hóa đơn từ 700.000đ</p>
+                </div>
+            </div>
+            <div class="grid__column-3">
+                <div class="service s1">
+                    <div>
+
+                        <img class ="service-img" src="./images/box-open-solid.svg" alt="">
+                    </div>
+                    <h3>3 Ngày đổi trả sản phẩm</h3>
+                    <p>Đổi sản phẩm trong vòng 3 ngày</p>
+                </div>
+            </div>
+            <div class="grid__column-3">
+                <div class="service s1">
+                    <div>
+                        <img class ="service-img" src="./images/phone-alt-solid.svg" alt="">
+
+                    </div>
+                    <h3>MUA HÀNG (9H00-22H00, T2-CN)</h3>
+                    <p>Mua hàng - CSKH 0983985989</p>
+                </div>
+            </div>
+            <div class="grid__column-3">
+                <div class="service s1">
+                    <div>
+
+                        <img class ="service-img" src="./images/store-alt-solid.svg" alt="">
+                    </div>
+                    <h3>THỬ NGAY TẠI SHOWROOMS</h3>
+                    <p>ĐỊA CHỈ: SỐ 10 NGÕ 12 HỮU ĐỨC</p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-3 pd-item">
+                        <h3 class="footer__heading">Về chúng tôi</h3>
+                        <div>
+                            <h4 class="footer__introduce">Duck Dep Zai - House Of Design</h4>
+                        </div>
+                    </div>
+                    <div class="grid__column-3 pd-item">
+                        <h3 class="footer__heading">Hỗ trợ khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <i class="footer__item-icon ti-hand-point-right"></i>
+                                <a href="" class="footer__link">Chính sách khách hàng</a>
+                            </li>
+                            <li class="footer__item">
+                                <i class="footer__item-icon ti-hand-point-right"></i>
+                                <a href="" class="footer__link">Chính sách bảo hành</a>
+                            </li>
+                            <li class="footer__item">
+                                <i class="footer__item-icon ti-hand-point-right"></i>
+                                <a href="" class="footer__link">Chính sách đổi sản phẩm</a>
+                            </li>
+                            <li class="footer__item">
+                                <i class="footer__item-icon ti-hand-point-right"></i>
+                                <a href="" class="footer__link">Giao hàng- thanh toán</a>
+                            </li>
+                            <li class="footer__item">
+                                <i class="footer__item-icon ti-hand-point-right"></i>
+                                <a href="" class="footer__link">Bảo mật thông tin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-3 pd-item">
+                        <h3 class="footer__heading">Thông tin liên hệ</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <i class="footer__item-icon ti-mobile"></i>
+                                <a href="" class="footer__link">097848543</a>
+                            </li>
+                            <li class="footer__item">
+                                <i class="footer__item-icon ti-email"></i>
+                                <a href="" class="footer__link">ducdeptrai@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-3 pd-item">
+                        <h3 class="footer__heading">Theo dõi chúng tôi trên</h3>
+                        <ul class="footer__list footer__list-contact">
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    <i class="footer__item-icon ti-facebook"></i></a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                <i class="footer__item-icon ti-instagram"></i></a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    <i class="footer__item-icon ti-twitter-alt"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <button id="backTop" class="hide-on-mobile-tablet" onclick="topFunction()">
+                <i class="ti-angle-up"></i>
+            </button>
+        </footer>
+    </div>
+</body>
+
+</html>

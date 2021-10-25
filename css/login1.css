@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 700px;
+    display: flex;
+    background: url("https://media.istockphoto.com/photos/suits-on-rack-picture-id1293366117?b=1&k=20&m=1293366117&s=170667a&w=0&h=c5-Rgz7CKkIdT-FDydn4mK1VZM49dNWhcN5B2GS9jgY=");
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-login {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-login {
+    width: 350px;
+    height: 400px;
+    background: white;
+    background: transparent;
+}
+
+.form-login > .dndk  a {
+    text-decoration: none;
+}
+.form-login h1 {
+    position: relative;
+    margin: 40px 30px 30px 0;
+    padding-bottom: 12px;
+    width: fit-content;
+    font-size: 18px;
+    color: white;
+
+}
+
+.form-login h1.dn::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: rgb(223, 223, 129);
+    bottom: 0;
+}
+
+.form-login button {
+    width: 100%;
+    background: rgb(223, 223, 129);
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form-field {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.form-field input {
+    width: 100%;
+    height: 45px;
+    padding-left: 30px;
+    border: none;
+    border-bottom: 2px solid rgb(223, 223, 129);
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+}
+
+.form-field i {
+    position: absolute;
+    font-size: 20px;
+    line-height: 45px;
+    color: rgb(223, 223, 129);
+}
+
+.dndk {
+    display: flex;
+}
+
+.logo-duke {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 90px;
+}
+
+a.forget {
+    float: right;
+    color: rgb(223, 223, 129);
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+button.loginfb {
+    background: rgb(101, 101, 240);
+    color: white;
+    margin-bottom: 8px;
+}
+
+button.logingg {
+    background: rgb(241, 101, 101);
+    color: white;
+}
