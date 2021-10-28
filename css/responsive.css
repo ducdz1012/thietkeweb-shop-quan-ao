@@ -82,6 +82,10 @@
         left: 16px;
     }
     
+    .grid {
+        width: 100%;
+    }
+    
 }
 
 /* Tablet*/
